@@ -25,9 +25,9 @@ self.addEventListener('push', function(event) {
   console.log('[Service Worker] Push Received.');
   console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
 
-  const title = 'Push Codelab';
+  const title = 'Notice DesignPlus';
   const options = {
-    body: 'Yay it works. Fuck Yeah!',
+    body: 'Entérate de las últimas noticias!',
     icon: 'images/icon.png',
     badge: 'images/badge.png'
   };
@@ -41,6 +41,6 @@ self.addEventListener('notificationclick', function(event) {
   event.notification.close();
 
   event.waitUntil(
-    clients.openWindow('https://developers.google.com/web/')
+    clients.openWindow('https://designplus.co/')
   );
 });
