@@ -97,9 +97,9 @@ function updateBtn() {
   }
 
   if (isSubscribed) {
-    pushButton.textContent = 'Disable Push Messaging';
+    pushButton.textContent = 'Dehabilitar Notificaciones';
   } else {
-    pushButton.textContent = 'Enable Push Messaging';
+    pushButton.textContent = 'Habilitar Notificaciones';
   }
 
   pushButton.disabled = false;
